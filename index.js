@@ -29,7 +29,7 @@ function intToRoman(num) {
   return output
 }
 
-console.log("Integar 2500 converted to roman numeral is: ", intToRoman(2500))
+//console.log("Integar 2500 converted to roman numeral is: ", intToRoman(2500))
 
 function longestCommonPrefix(strings) {
   if (strings.length === 0) {
@@ -56,4 +56,17 @@ function longestCommonPrefix(strings) {
   return commonPrefix
 }
 
-console.log(longestCommonPrefix(["flower", "flow", "flight"]))
+//console.log(longestCommonPrefix(["flower", "flow", "flight"]))
+
+var reverseWords = function (s) {
+  const strArr = s.trim().split(" ").reverse()
+  let output = ""
+  strArr.forEach((curr) => {
+    if (curr !== "") {
+      output += curr + " "
+    }
+  })
+  return output.trim()
+}
+
+console.log(reverseWords("the sky is blue"))
